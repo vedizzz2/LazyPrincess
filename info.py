@@ -48,7 +48,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Cluster0Collection')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002541390598))
 LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', -1002343997444))
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
-PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS'))
+PRIME_MEMBERS_LOGS = int(environ.get('-1002159322288'))
 
 # PREMIUM ACCESS *
 lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) else lazydownloaders for lazydownloaders in environ.get('PRIME_DOWNLOADERS', '5906206984').split()]
@@ -94,7 +94,7 @@ MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "Netflix_Ai_replay") 
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False) # make it true to enable url shortner in groups or pm
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'atglinks.com') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '72a7f0131e5e657e37cf7e2a9e928a616b671cf5')
-lazy_groups = environ.get('LAZY_GROUPS','')
+lazy_groups = environ.get('LAZY_GROUPS','-1002343997444')
 LAZY_GROUPS = [int(lazy_groups) for lazy_groups in lazy_groups.split()] if lazy_groups else None # ADD GROUP ID IN THIS VARIABLE 
 my_users = [int(my_users) if id_pattern.search(my_users) else my_users for my_users in environ.get('MY_USERS', '6969391120').split()]
 MY_USERS = (my_users) if my_users else [] #input the id of that users who can share file in file protection mode
