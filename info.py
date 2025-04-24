@@ -47,7 +47,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Cluster0Collection')
 # LOG CHANNELS *
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002541390598))
 LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', -1002343997444))
-REQ_CHANNEL = int(environ.get('-1002159322288'))
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
 PRIME_MEMBERS_LOGS = int(environ.get('6969391120'))
 
 # PREMIUM ACCESS *
