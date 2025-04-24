@@ -40,7 +40,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information *
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://nithish7uy:EU4G8ws46ZQr17tF@cluster0.glvel.mongodb.net/?retryWrites=true&w=majority&appName=")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://nithish7uy:EU4G8ws46ZQr17tF@cluster0.glvel.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Cluster0Collection')
 
@@ -48,7 +48,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Cluster0Collection')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1002541390598))
 LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', -1002343997444))
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
-PRIME_MEMBERS_LOGS = int(environ.get('-1002159322288'))
+PRIME_MEMBERS_LOGS = int(environ.get(''))
 
 # PREMIUM ACCESS *
 lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) else lazydownloaders for lazydownloaders in environ.get('PRIME_DOWNLOADERS', '5906206984').split()]
